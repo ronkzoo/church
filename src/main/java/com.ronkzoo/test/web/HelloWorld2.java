@@ -1,6 +1,8 @@
 package com.ronkzoo.test.web;
 
 import com.ronkzoo.test.vo.HelloWorldVo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorld2 {
 
+    private Logger logger= LoggerFactory.getLogger(this.getClass());
 
     @RequestMapping(value = "/hello2")
     public HelloWorldVo getAllEmployees()
