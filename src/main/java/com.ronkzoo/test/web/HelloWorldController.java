@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 
 @Controller("helloworld")
-public class HelloWorld extends HttpServlet {
+public class HelloWorldController extends HttpServlet {
 
     private Logger logger= LoggerFactory.getLogger(this.getClass());
 
