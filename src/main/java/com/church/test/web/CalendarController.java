@@ -111,6 +111,7 @@ public class CalendarController extends HttpServlet {
         c.set(cal.get(Calendar.YEAR), cal.get(Calendar.MONTH),1);
         vo.setBgnWeek(c.get(Calendar.DAY_OF_WEEK));
 
+        model.addAttribute("route","calendar");
         model.addAttribute("calendar",vo);
 
         return new ModelAndView("com/ronkzoo/test/Calendar");
@@ -118,11 +119,11 @@ public class CalendarController extends HttpServlet {
     }
 
     @RequestMapping(value="/jodaCalendar")
-    public void getJodaTodayCalendarPage(
+    public ModelAndView getJodaTodayCalendarPage(
             HttpServletRequest request,  HttpServletResponse response, Model model) {
 
         LocalDate theDay = new LocalDate();
-        this.getJodaCalendarPage(request, response, theDay.getYear(), theDay.getMonthOfYear(), model);
+        return this.getJodaCalendarPage(request, response, theDay.getYear(), theDay.getMonthOfYear(), model);
 
     }
 
@@ -160,6 +161,7 @@ public class CalendarController extends HttpServlet {
         LocalDate bgnDate = new LocalDate(year, month, 1);
         vo.setBgnWeek(bgnDate.getDayOfWeek());
 
+        model.addAttribute("route", "jodaCalendar");
         model.addAttribute("calendar",vo);
 
         return new ModelAndView("com/ronkzoo/test/Calendar");

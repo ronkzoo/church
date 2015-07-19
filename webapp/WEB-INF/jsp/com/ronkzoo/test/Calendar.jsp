@@ -23,9 +23,9 @@
 <table border="0" cellpadding="0" cellspacing="0">
     <tr>
         <td align="center">
-            <a href="/calendar/${calendar.prevYear}/${calendar.prevMonth}">◁</a>
+            <a href="/${route}/${calendar.prevYear}/${calendar.prevMonth}">◁</a>
             ${calendar.curYear}년 ${calendar.curMonth}월
-            <a href="/calendar/${calendar.nextYear}/${calendar.nextMonth}">▷</a></td>
+            <a href="/${route}/${calendar.nextYear}/${calendar.nextMonth}">▷</a></td>
     </tr>
     <tr>
         <td>
