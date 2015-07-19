@@ -14,6 +14,7 @@ import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.sql.DataSource;
+import java.util.Calendar;
 
 /**
  * Created by ronkzoo on 2015. 7. 14..
@@ -36,10 +37,7 @@ public class TestMain extends Assert{
     public void init(){
 
 
-
     }
-
-
     @Test
     public void test(){
         StringBuffer query = new StringBuffer();
@@ -52,6 +50,11 @@ public class TestMain extends Assert{
         assertTrue(cnt > 0);
 
     }
+
+
+
+
+
 
 
 

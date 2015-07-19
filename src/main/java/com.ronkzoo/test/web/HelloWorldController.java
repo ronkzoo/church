@@ -10,7 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 
-@Controller("helloworld")
+/**
+ * Restful Test
+ * JsonTemplate
+ */
+@Controller("helloworldController")
 public class HelloWorldController extends HttpServlet {
 
     private Logger logger= LoggerFactory.getLogger(this.getClass());
