@@ -1,7 +1,7 @@
-package com.ronkzoo.test.vo;
+package com.church.test.vo;
 
 /**
- * Created by ronkzoo on 2015. 7. 16..
+ * Created by com on 2015. 7. 16..
  */
 public class HelloWorldVo {
 

@@ -1,4 +1,4 @@
-package com.ronkzoo;
+package com.church;
 
 import org.joda.time.LocalDate;
 import org.junit.Test;
@@ -6,7 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created by ronkzoo on 2015. 7. 19..
+ * Created by com on 2015. 7. 19..
  */
 public class JodaTimeTestMain {
     private Logger logger = LoggerFactory.getLogger(this.getClass());

@@ -1,6 +1,6 @@
-package com.ronkzoo.test.web;
+package com.church.test.web;
 
-import com.ronkzoo.test.vo.HelloWorldVo;
+import com.church.test.vo.HelloWorldVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by ronkzoo on 2015. 7. 18..
+ * Created by com on 2015. 7. 18..
  */
 @RestController
 public class HelloWorldController2 {
@@ -20,7 +20,7 @@ public class HelloWorldController2 {
        {
            HelloWorldVo hello = new HelloWorldVo();
            hello.setName("이민욱");
-           hello.setId("ronkzoo");
+           hello.setId("com");
            return hello;
        }
 
@@ -29,7 +29,7 @@ public class HelloWorldController2 {
        {
            HelloWorldVo hello = new HelloWorldVo();
            hello.setName(name);
-           hello.setId("ronkzoo");
+           hello.setId("com");
            return hello;
        }
 

@@ -1,7 +1,7 @@
 <%@ page import="java.util.Calendar" %>
 <%--
   Created by IntelliJ IDEA.
-  User: ronkzoo
+  User: com
   Date: 2015. 7. 18.
   Time: 오후 1:34
   To change this template use File | Settings | File Templates.

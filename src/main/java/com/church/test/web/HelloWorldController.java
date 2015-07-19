@@ -1,6 +1,6 @@
-package com.ronkzoo.test.web;
+package com.church.test.web;
 
-import com.ronkzoo.test.vo.HelloWorldVo;
+import com.church.test.vo.HelloWorldVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

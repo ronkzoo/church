@@ -1,4 +1,4 @@
-package com.ronkzoo;
+package com.church;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 /**
- * Created by ronkzoo on 2015. 7. 18..
+ * Created by com on 2015. 7. 18..
  */
 public class TestCalendar extends Assert {
 

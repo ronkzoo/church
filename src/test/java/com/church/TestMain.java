@@ -1,4 +1,4 @@
-package com.ronkzoo;
+package com.church;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -17,7 +17,7 @@ import javax.sql.DataSource;
 import java.util.Calendar;
 
 /**
- * Created by ronkzoo on 2015. 7. 14..
+ * Created by com on 2015. 7. 14..
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration( {

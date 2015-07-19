@@ -1,6 +1,6 @@
-package com.ronkzoo.test.web;
+package com.church.test.web;
 
-import com.ronkzoo.test.vo.CalendarVo;
+import com.church.test.vo.CalendarVo;
 import org.joda.time.LocalDate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +17,7 @@ import java.text.DecimalFormat;
 import java.util.Calendar;
 
 /**
- * Created by ronkzoo on 2015. 7. 18..
+ * Created by com on 2015. 7. 18..
  */
 @Controller("calendarController")
 public class CalendarController extends HttpServlet {
