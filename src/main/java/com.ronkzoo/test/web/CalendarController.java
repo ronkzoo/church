@@ -1,7 +1,6 @@
 package com.ronkzoo.test.web;
 
 import com.ronkzoo.test.vo.CalendarVo;
-import org.apache.tomcat.jni.Local;
 import org.joda.time.LocalDate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -118,6 +117,15 @@ public class CalendarController extends HttpServlet {
 
     }
 
+    @RequestMapping(value="/jodaCalendar")
+    public void getJodaTodayCalendarPage(
+            HttpServletRequest request,  HttpServletResponse response, Model model) {
+
+        LocalDate theDay = new LocalDate();
+        this.getJodaCalendarPage(request, response, theDay.getYear(), theDay.getMonthOfYear(), model);
+
+    }
+
     @RequestMapping(value = "/jodaCalendar/{year}/{month}")
     public ModelAndView getJodaCalendarPage(
             HttpServletRequest request,  HttpServletResponse response,
@@ -127,8 +135,8 @@ public class CalendarController extends HttpServlet {
 
         CalendarVo vo    = new CalendarVo();
         LocalDate theDay = new LocalDate();
-        Integer year     =   (year != null) ? year  : theDay.getYear();
-        Integer month    =   (month!= null) ? month : theDay.getDayOfMonth();
+        year             =   (year != null) ? year  : theDay.getYear();
+        month            =   (month!= null) ? month : theDay.getDayOfMonth();
         Integer day      = theDay.getDayOfMonth();
         theDay = new LocalDate(year,month,day);
 
