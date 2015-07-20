@@ -63,6 +63,7 @@ public class CalendarController extends HttpServlet {
         cal4.set(cal.get(Calendar.YEAR), cal.get(Calendar.MONTH),1);
         vo.setBgnWeek(cal4.get(Calendar.DAY_OF_WEEK));
 
+        model.addAttribute("route","calendar");
         model.addAttribute("calendar",vo);
 
         return new ModelAndView("com/ronkzoo/test/Calendar");
@@ -159,7 +160,7 @@ public class CalendarController extends HttpServlet {
             vo.setPrevYear(year);
         }
         LocalDate bgnDate = new LocalDate(year, month, 1);
-        vo.setBgnWeek(bgnDate.getDayOfWeek());
+        vo.setBgnWeek(bgnDate.getDayOfWeek() + 1);
 
         model.addAttribute("route", "jodaCalendar");
         model.addAttribute("calendar",vo);
